@@ -1,3 +1,118 @@
-h1 {
-  color: red;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  padding: 50px 80px;
+  background-color: #1f2937;
+}
+
+.homeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.homeTextContainer {
+  width: 48%;
+}
+
+.homeHeading {
+  font-size: 48px;
+  font-family: sans-serif;
+  color: #f9faf8;
+  font-weight: extra-bold;
+  margin: 0;
+  line-height: 1;
+}
+
+.homeText {
+  font-size: 18px;
+  font-family: sans-serif;
+  opacity: 0.9;
+  color: #e5e7eb;
+  margin: 8px 0;
+  max-width: 450px;
+}
+
+.homeBtn {
+  background-color: #3882f6;
+  padding: 8px 24px;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.homeBtn:active {
+  opacity: 0.9;
+  scale: 0.98;
+}
+
+/* ************************ home Image ****************** */
+
+.homeImgContainer {
+  width: 48%;
+}
+
+.homeImgContainer > img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+  .homeHeading {
+    font-size: 40px;
+  }
+
+  .homeText {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    padding: 50px 30px;
+  }
+
+  .homeTextContainer {
+    width: 100%;
+  }
+
+  .homeHeading {
+    font-size: 48px;
+  }
+
+  .homeText {
+    font-size: 18px;
+  }
+
+  .homeImgContainer {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .homeHeading {
+    font-size: 36px;
+  }
+
+  .homeText {
+    font-size: 14px;
+  }
 }
