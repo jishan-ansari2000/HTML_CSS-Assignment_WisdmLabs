@@ -40,8 +40,11 @@ body {
   padding: 10px 0px;
 }
 
-.topnav .navLink {
+.menuContainer {
   float: right;
+}
+
+.topnav .navLink {
   font-size: 18px;
   color: #e5f7eb;
   opacity: 0.8;
@@ -340,9 +343,14 @@ body {
     padding: 40px 60px;
   }
 
-  .topnav a:not(:first-child) {
+  .topnav .navLink {
     display: none;
   }
+
+  .menuContainer {
+    float: left;
+  }
+
   .topnav a.icon {
     float: right;
     display: block;
